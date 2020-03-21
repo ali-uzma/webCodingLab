@@ -1,33 +1,133 @@
-#noella {
-    width: 70%;
-    margin-left: 15px;
-    border: 3px solid gray;
-    z-index: 0;
+body{
+    background-image: url('bluewood.jpg');
+    background-size: cover;
+}
+#contain{
+    --resizeable-width: 70%;
+    width: var(--resizeable-width);
+    min-width: 400px;
+    max-width: 1200px;
+    --resizeable-height: 500px;
+    height: var(--resizeable-height);
+    min-height: 300px;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 15%;
+    background-color: coral;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    transform: translate3d(0px,0px,0px);
 
 }
-img {
-    width: 50%;
+#navpoint56{
+    background-color: black;
+    flex-basis: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-section {
-    
-    box-shadow: 10px 12px rgba(0, 0, 0, 0.3);
-    left:72%;
-    padding: 10px;
-    margin-right: 5%;
-    width: 27%;
-    height: auto;
-    line-height: 40px;
-    padding-left: 7px;
-    background-color: MistyRose ;
+.buton{
+    text-align: center;
+    min-width: 100px;
+    max-width: 1000px;
+}
+.check1{
+    --resizeable-widthMainbuton: 400px;
+    width: var(--resizeable-widthMainbuton);
+    background-color: black;
+    flex-grow: 2;
+
+}
+.check2{
+    --resizeable-widthbuton: 300px;
+    width: var(--resizeable-widthbuton);
+    background-color: black;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+#main{
+    background-color: red;
+    flex-grow: 1;
+    display: flex;
+    height: calc(100% - 30px);
+}
+#change{
+    overflow: auto;
+    --resizeable-widthMain: 400px;
+    width: var(--resizeable-widthMain);
+    min-width: var(--min-widthMain);
+    max-width: var(--max-widthMain);
+    background-color: rgb(210, 200, 214);
+    flex-grow: 2;
+}
+#control{
+    height: 100%;
+    overflow: auto;
+    --resizeable-width: 300px;
+    width: var(--resizeable-width);
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    background-color: deepskyblue;
+    flex-grow: 1;
+
+}
+#handle {
+    float: left;
+    height: 100%;
+    width: 2px;
+    background-color: transparent;
+    cursor: ew-resize;
+    z-index: 5;
+}
+#handleleft {
     position: absolute;
-    top: 2%;
-    font-weight: bold;
-    font-size: medium;
-    color: rgb(116, 101, 101);
-    z-index: 7;
-
+    left: -3px;
+    width: 5px;
+    height: 100%;
+    background-color: transparent;
+    cursor: ew-resize;
+    z-index: 4;
+    /* flex:none; */
 }
-#story{
-    background-color: mistyrose;
+#handleright {
+    right: -3px;
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: transparent;
+    cursor: ew-resize;
+    z-index: 4;
+    /* flex: none; */
+}
+#handlebottom {
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    width: 100%;
+    background-color: transparent;
+    cursor: ns-resize;
+    z-index: 4;
+}
+.html, .css, .js{
+    flex-basis: 50px;
+    flex-shrink: 1;
     border: none;
+    background-color: black;
+    color: gray;
+    padding: 5px;
+}
+.drag{
+    background-color: black;
+    color: gray;
+    padding: 5px;
+    border-color: black;
+    outline: none;
+}
+.drag:hover{
+    background-color: rgb(15, 15, 15);
+}
+.html:focus, .css:focus, .js:focus{
+    outline: none;
 }
