@@ -15,7 +15,6 @@ function separate(arr){
     }
     return obj;
 }
-let props = {};
 
 var texti = document.querySelector("#story");
 texti.addEventListener('input', e => {
@@ -60,58 +59,19 @@ texti.addEventListener('input', e => {
             elements.splice(e,1,"#noella");
         });
     }
-    const sporp = {};
-        
+    const doc = document.querySelector('style');  
+    doc.innerHTML="";  
     elements.forEach((e,i)=>{
         if(fin[i]){
-            sporp[e] = [];
-            fin[i].forEach((e2,j) => {
+            fin[i].forEach((e2,j)=>{
+                const markup = `
+                ${e} {
+                    ${e2[0]}:${e2[1]};
+                }
+                `;
+                doc.insertAdjacentText("afterbegin",markup);
 
-
-                //cancelling css part when property is removed
-                sporp[e].push(e2[0]);
-
-                // // to remove empty elements
-                sporp[e].forEach((y,i) => {
-                    if(y ===""){
-                        sporp[e].splice(i,1);
-                    }
-                });
-
-
-                const h = Array.from(document.querySelectorAll(`${e}`));
-                h.forEach(e3=>{
-                    if(e2[0] in e3.style){
-                        e3.style[e2[0]] = e2[1];
-
-                     }
-
-                });
             });
         }
     });
-// deleting or removing style
-    for(var key in props){
-        if(props.hasOwnProperty(key)){
-            if(key in sporp){
-                 props[key].forEach(e=>{
-                     if(!sporp[key].includes(e)){
-                        //console.log("includes");
-                        
-                        const v = Array.from(document.querySelectorAll(`${key}`));
-                        v.forEach(e3=>{
-                            if(e in e3.style){
-                                //console.log("style");
-                                e3.style[e] = "";
-               
-                            }
-               
-                        });
-
-                    }
-                });
-            }
-        }
-    }
-    props = sporp;
 });
