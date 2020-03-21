@@ -1,0 +1,15 @@
+{
+  "name": "code-playground",
+  "version": "1.0.0",
+  "description": "play with code on browser",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uzma Ali",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}

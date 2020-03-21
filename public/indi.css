@@ -1,0 +1,33 @@
+#noella {
+    width: 70%;
+    margin-left: 15px;
+    border: 3px solid gray;
+    z-index: 0;
+
+}
+img {
+    width: 50%;
+}
+section {
+    
+    box-shadow: 10px 12px rgba(0, 0, 0, 0.3);
+    left:72%;
+    padding: 10px;
+    margin-right: 5%;
+    width: 27%;
+    height: auto;
+    line-height: 40px;
+    padding-left: 7px;
+    background-color: MistyRose ;
+    position: absolute;
+    top: 2%;
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(116, 101, 101);
+    z-index: 7;
+
+}
+#story{
+    background-color: mistyrose;
+    border: none;
+}
