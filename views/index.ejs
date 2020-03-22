@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type="text/css">
+      #change1067{
+          margin:20px;
+     }
     </style>
     <script src="code/lib/codemirror.js"></script>
     <link href="code/lib/codemirror.css" rel="stylesheet">
@@ -23,67 +26,90 @@
     <link rel="stylesheet" href="indi.css">
 </head>
 <body>
-    <div id="contain">
-        <div id="handleleft"></div>
-        <div id="handleright"></div>
-        <div id="navpoint56">
-            <div class='buton check1'>
-                <button class="drag">Drag Mode</button>
-            </div>
-            <div class='buton check2'>
-                <button class="html">HTML</button>
-                <button class="css">CSS</button>
-                <button class="js">JS</button>
-            </div>
-
-        </div>
-        <div id="main">
-            <div id="change">this is body of webpage</div>
-            <div id="control">
-                <div id="handle"></div>
-                <textarea id="editorh" placeholder="html code......."></textarea>
-                <textarea id="editorc" placeholder="CSS code......."></textarea>
-                <textarea id="editorj" placeholder="vanila javascript code ...... "></textarea>
-            </div>
-
-        </div>
-        <div id="handlebottom"></div>
-    </div>
-    <script>
-        var editorh = CodeMirror.fromTextArea(document.getElementById('editorh'), {
-            mode: { name: "xml", htmlMode: true, matchClosing: true},
-            theme: "material-ocean",
-            lineNumbers: true,
-            autoCloseTags: true,
-            tabMode:"indent",
-            matchTags: {bothTags: true},
-            styleActiveLine: "enabled"
-        });
-        editorh.setSize('100%','100%');
-
-        var editorC = CodeMirror.fromTextArea(document.getElementById('editorc'), {
-            mode: 'text/css',
-            theme: "material-ocean",
-            lineNumbers: true,
-            autoCloseBrackets: true,
-            tabMode:"indent",
-            styleActiveLine: "enabled"
-        });
-        editorC.setSize('100%','100%');
-
-        var editorJ = CodeMirror.fromTextArea(document.getElementById('editorj'), {
-            mode: "javascript",
-            theme: "material-ocean",
-            lineNumbers: true,
-            matchBrackets: true,
-            autoCloseBrackets: true,
-            tabMode:"indent",
-            styleActiveLine: "enabled"
-        });
-        editorJ.setSize('100%','100%');
+    <myele90 id="myLogo90">CODING LAB</myele90>
+    <myele90 id="functionLikeButtonImage">IMAGES</myele90><br>
+    <myele90 id="functionLikeButtonVideo">VIDEOS</myele90>
+    <myele90 id='theContainingBodyOfTheMovingDiv'>
+        <myele90 id = 'theMovingDiv6747'>
+            <img class="IconToReverseDiv1" src="ar.png" style="padding:20px;cursor:pointer" width= 20 >
+            <input type="file"
+            id="ImageInput455376" name="avatar"
+            accept="image/png, image/jpeg">
+     
+           <myele90 id="putImageHere63387"></myele90>
+        </myele90>
+        <myele90 id = 'theMovingDiv67465'>
+            <img class="IconToReverseDiv2" src="ar.png" style="padding:20px;cursor:pointer" width= 20 >     
+            <input type="file"
+            id="VideoInput455376" name="avatar2"
+            accept="video/*">
+     
+           <myele90 id="putVideoHere63387"></myele90>
+        </myele90>
+    </myele90>
 
 
-    </script>
+    <!-- <myele90>
+        <button id="uploadingButton6789">Upload</button>
+    </myele90> -->
+    <myele90 id="contain56">
+        <myele90 id="handleleft"></myele90>
+        <myele90 id="handleleft"></myele90>
+        <myele90 id="handleright"></myele90>
+        <myele90 id="navpoint56">
+            <myele90 class='check162'>
+                <button class="drag364">Drag Mode</button>
+            </myele90>
+            <myele90 class='check262'>
+                <button class="html1089">HTML</button>
+                <button class="css1088">CSS</button>
+                <button class="js1087">JS</button>
+            </myele90>
+
+        </myele90>
+        <myele90 id="main856">
+            <myele90 id="change1067">
+                <h2>
+                    WELCOME TO THE CODING LAB
+                  </h2>
+                  <P>
+                    Here are some instructions to use the application. This app
+                    provides all the coding tools to build a website, html section does
+                    not support style or script tags. All the coding instructions are implimented as you code. 
+                  </P>
+                  <h3>
+                    DRAGING OPTION AND RESIZING
+                  </h3>
+                  <p>
+                    Html elements are draggable to change the position,
+                    making it easier to find the perfect spot to place them.
+                    In order to do it, <strong>Drag Mode</strong> should be activated. 
+                  </p>
+                  <p>
+                    The editor's window size can be changed by dragging it from the the right or from the bottom borders
+                    and position of the whole window can be adjusted by dragging it from the top.
+                  </p>
+                  <h3>
+                    ADDING LOCAL PICTURES AND VIDEOS
+                  </h3>
+                  <p>
+                    To add local files, <strong>IMAGE</strong> and <strong>VIDEO</strong>
+                    buttons provide option to select the file and after selection,
+                    it creates a url for you that you can copy and paste as src attribute of image or video tag.
+                    Url starts with a word 'blob'. <strong>Example: </strong>blob:null/a149d547-3628-454c-aff6-ffad8ca39358.
+                  </p>
+            </myele90>
+            <myele90 id="control1050">
+                <myele90 id="handle659"></myele90>
+                <textarea id="editorh78" placeholder="html code......."></textarea>
+                <textarea id="editorc78" placeholder="CSS code......."></textarea>
+                <textarea id="editorj78" placeholder="vanila javascript code ...... "></textarea>
+            </myele90>
+
+        </myele90>
+        <myele90 id="handlebottom"></myele90>
+    </myele90>
+    
     <script src="indi.js"></script>
 </body>
 </html>

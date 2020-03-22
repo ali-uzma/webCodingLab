@@ -1,24 +1,31 @@
 body{
     background-image: url('bluewood.jpg');
     background-size: cover;
+    visibility: visible;
+    
 }
-#contain{
-    --resizeable-width: 70%;
+#contain56{
+    /* position: absolute; */
+    --resizeable-width: 76%;
     width: var(--resizeable-width);
     min-width: 400px;
-    max-width: 1200px;
+    --max-width: 1200px;
+    max-width: var(--max-width);
     --resizeable-height: 500px;
     height: var(--resizeable-height);
     min-height: 300px;
     margin: auto;
-    margin-top: 40px;
-    margin-left: 15%;
-    background-color: coral;
+    top: 50px;
+    margin-left: 10%;
     border: 5px solid black;
     display: flex;
     flex-direction: column;
     transform: translate3d(0px,0px,0px);
+    z-index: 2;
 
+}
+myele90{
+    display: block;
 }
 #navpoint56{
     background-color: black;
@@ -27,19 +34,19 @@ body{
     justify-content: space-between;
     align-items: flex-end;
 }
-.buton{
+.check162, .check262{
     text-align: center;
     min-width: 100px;
     max-width: 1000px;
 }
-.check1{
+.check162{
     --resizeable-widthMainbuton: 400px;
     width: var(--resizeable-widthMainbuton);
     background-color: black;
     flex-grow: 2;
 
 }
-.check2{
+.check262{
     --resizeable-widthbuton: 300px;
     width: var(--resizeable-widthbuton);
     background-color: black;
@@ -47,33 +54,31 @@ body{
     display: flex;
     justify-content: center;
 }
-#main{
-    background-color: red;
+#main856{
+    background-color: rgb(210, 200, 214);
     flex-grow: 1;
     display: flex;
     height: calc(100% - 30px);
 }
-#change{
+#change1067{
     overflow: auto;
     --resizeable-widthMain: 400px;
     width: var(--resizeable-widthMain);
     min-width: var(--min-widthMain);
     max-width: var(--max-widthMain);
-    background-color: rgb(210, 200, 214);
     flex-grow: 2;
 }
-#control{
+#control1050{
     height: 100%;
     overflow: auto;
     --resizeable-width: 300px;
     width: var(--resizeable-width);
     min-width: var(--min-width);
     max-width: var(--max-width);
-    background-color: deepskyblue;
     flex-grow: 1;
 
 }
-#handle {
+#handle659 {
     float: left;
     height: 100%;
     width: 2px;
@@ -87,7 +92,7 @@ body{
     width: 5px;
     height: 100%;
     background-color: transparent;
-    cursor: ew-resize;
+    /* cursor: ew-resize; */
     z-index: 4;
     /* flex:none; */
 }
@@ -110,7 +115,7 @@ body{
     cursor: ns-resize;
     z-index: 4;
 }
-.html, .css, .js{
+.html1089, .css1088, .js1087{
     flex-basis: 50px;
     flex-shrink: 1;
     border: none;
@@ -118,16 +123,72 @@ body{
     color: gray;
     padding: 5px;
 }
-.drag{
+.drag364{
     background-color: black;
     color: gray;
     padding: 5px;
+    border: none;
     border-color: black;
     outline: none;
 }
-.drag:hover{
+.drag364:hover{
     background-color: rgb(15, 15, 15);
 }
-.html:focus, .css:focus, .js:focus{
+.html1089:focus, .css1088:focus, .js1087:focus{
     outline: none;
+}
+
+#functionLikeButtonImage, #functionLikeButtonVideo{
+    position: absolute;
+    right: 10px;
+    font-size: small;
+    width: 70px;
+    background-color: rgb(9, 13, 19);
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+#functionLikeButtonVideo{
+    top: 60px;
+}
+#functionLikeButtonVideo:hover ,#functionLikeButtonImage:hover{
+    background-color: black;
+} 
+#theContainingBodyOfTheMovingDiv{
+    display: flex;
+    /* position:absolute; */
+    overflow: hidden;
+}
+#theMovingDiv6747, #theMovingDiv67465{
+    position: relative;
+    margin-top: 30px;
+    /* right: -2000px; */
+    width:40%;
+    min-height: 550px;
+    background-color: rgba(17, 22, 37, 0.973) ;
+    z-index: 8;
+    overflow: auto;
+}
+#theMovingDiv67465{
+    right: -2200px;
+}
+#theMovingDiv6747{
+    right: -2000px; 
+}
+#ImageInput455376, #VideoInput455376{
+    color: white;
+}
+#myLogo90{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.315);
+    font-size: 30px;
+    font-weight: bolder;
+    /* transform: rotate(270deg); */
+    top: 93%;
+    left: 83%;
+    margin-left: 0px;
+    text-shadow: 6px 10px 6px black;
+
 }
